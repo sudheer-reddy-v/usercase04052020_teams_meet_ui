@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Teams Meeting UI</title>
+
+        <style>
+            body {
+                margin: 0;
+                display:flex; 
+                flex-direction:column; 
+                justify-content:center;                  
+                height: 95vh;
+            }
+
+            #container {
+                height: 100%;
+                width: 85%;
+                display: grid;
+                grid-template-rows: 30px 1fr 30px;
+                position: relative;
+                left: 100px;
+                border: 1px solid black;
+            }
+
+            #wrapper {                
+                width: 100%;
+                height: 100%;
+                display: grid;
+                grid-template-rows: 30px 1fr 30px;
+            }
+
+            #content {
+                overflow-y: auto;
+                background-color: #403f5a;
+            }
+            #container > * {
+                padding: 5px;
+            }
+
+            #header {
+                background-color: #252423;
+                border: 1px solid black;
+            }
+
+            #footer {
+                background-color: #252423;  
+                border: 1px solid black;              
+            }
+
+            .leftDiv {
+                background-color: #252423;
+                height: inherit;
+                width: 7%;
+                left: 10px;
+                position: fixed;   
+                border: 1px solid black;             
+            }            
+            .rightDiv {
+                background-color: #252423;
+                height: inherit;
+                width: 7%;
+                right: 10px;
+                position: fixed;
+                border: 1px solid black;
+            }
+
+            #searchTab {
+                text-align: center;                
+                width:40%;
+                height: 95%;
+                font-size:14pt;
+                border: 1px solid black;
+                background-color: #403f5a;
+                color: whitesmoke;
+            }
+
+            #usersTab {
+                border: 1px solid black;
+            }
+
+            table#usersTab {                
+                table-layout: fixed ;
+                width:100%; 
+                height: 100%;
+                border-collapse: collapse ;
+                border: 1px black solid ;
+            }
+            
+            table#usersTab body {
+                height: 100%;
+                overflow-y: auto;
+            }
+            table#usersTab td {                
+                width: 40%;
+                height: 30%;
+                border: 1px black solid ;
+                padding: 10px ;
+                text-align: center; 
+                
+            }
+
+            table#usersTab td img {
+                width: 70%;
+                height: 100%;
+                border-radius: 50%;
+            }
+
+            table#usersTab td img:hover {
+                border: 5px solid beige;  
+                box-shadow: 0 0 0 5px steelblue;              
+            } 
+           
+        </style>
+    </head>
+    <body>
+        <div class="leftDiv">
+            This is Left DIV.
+        </div>
+        <div id="container">
+            <div id="header">
+                <input type="text" name="searchTab" id="searchTab" placeholder="Search or type a command" autocomplete="on" autofocus/>
+            </div>              
+            <div id="content">
+                <table id="usersTab" style="margin: auto;">
+                    <tbody>
+                        <tr>                       
+                            <td><img src="../images/java.png" /></td>
+                            <td><img src="../images/springboot.png"/></td>
+                            <td><img src="../images/hibernate.png"/></td>
+                        </tr>
+                        <tr>                       
+                            <td><img src="../images/java.png" /></td>
+                            <td><img src="../images/springboot.png"/></td>
+                            <td><img src="../images/hibernate.png"/></td>
+                        </tr>
+                        <tr>                       
+                            <td><img src="../images/java.png" /></td>
+                            <td><img src="../images/springboot.png"/></td>
+                            <td><img src="../images/hibernate.png"/></td>
+                        </tr>
+                        <tr>                       
+                            <td><img src="../images/java.png" /></td>
+                            <td><img src="../images/springboot.png"/></td>
+                            <td><img src="../images/hibernate.png"/></td>
+                        </tr>
+                        <tr>                       
+                            <td><img src="../images/java.png" /></td>
+                            <td><img src="../images/springboot.png"/></td>
+                            <td><img src="../images/hibernate.png"/></td>
+                        </tr>
+                        <tr>                       
+                            <td><img src="../images/java.png" /></td>
+                            <td><img src="../images/springboot.png"/></td>
+                            <td><img src="../images/hibernate.png"/></td>
+                        </tr>
+                        <tr>                       
+                            <td><img src="../images/java.png" /></td>
+                            <td><img src="../images/springboot.png"/></td>
+                            <td><img src="../images/hibernate.png"/></td>
+                        </tr>
+                        <tr>                       
+                            <td><img src="../images/java.png" /></td>
+                            <td><img src="../images/springboot.png"/></td>
+                            <td><img src="../images/hibernate.png"/></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>              
+            <div id="footer">
+                Footer Content
+            </div>               
+        </div>
+        <div class="rightDiv">
+            This is Right DIV.
+        </div>
+     </body>
+</html>
